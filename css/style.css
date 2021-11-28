@@ -1,0 +1,145 @@
+@import "compass/css3";
+
+@keyframes fadeIn { 
+  from { opacity: 0; } 
+}
+
+html {
+    scroll-padding-top: 16vw;
+    max-width: 1200px;
+}
+
+body {
+  
+    margin: 0;
+    background-color: #9aadbf;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+header {
+    background-color: #002e58;
+    width: 100%;
+    height: 15vw;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+}
+
+
+section h3 {
+    font-size: 1.5vw;
+    font-weight: bold;
+
+}
+section{
+    max-width: 50vw;
+}
+
+table {
+    table-layout: fixed ;
+    border-collapse: collapse;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    min-width: 50vw;
+}
+
+th, td {
+    text-align: left;
+    
+}
+
+td {
+    padding-left: 5px;
+        
+}
+
+th:nth-child(1){width:25vw;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+p + ul {
+    margin-top: -6px;
+}
+
+#headerimage {
+    float: left;
+    padding: 15px 10px 10px 15px;
+    transform: scaleX(-1);
+    z-index: 1;
+    border-radius: 50%;
+    width: 15vw;
+    height: auto;
+}
+
+#headertextbox {
+    display: flex;
+    flex-direction: column;
+    color: #9aadbf;
+}
+
+#myname {
+    font-size: 5vw;
+    margin: 0;
+}
+
+#myprofession {
+    font-size: 2.1vw;
+    padding: 5px, 5px, 5px, 5px;
+    margin: 0 0 0 2px;
+}
+
+#javaquote {
+    font-size: 1.2vw;
+    padding: 0px, 5px, 5px, 3px;
+    margin: 0 0 0 3px;
+}
+
+.icon {
+    color: #002e58;
+}
+.icon, .fa-java {
+    color: #9aadbf;
+    animation: fadeIn 2s infinite alternate;
+}
+
+
+.sidenav {
+
+    height: 100%;
+    width: 15vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #002e58;
+    overflow: hidden;
+    padding-top: 15%;
+}
+
+.sidenav a {
+    padding: 15px 10px 0px 20px;
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: #9aadbf;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #ffffff;
+}
+
+.main {
+    font-size: 1.2vw;
+    margin-left: 15vw;
+    margin-top: 15vw;
+    padding: 10px 10px 70px 20px;
+    color: #002e58;
+    overflow-x: auto;
+
+}
+
+.main p {
+    padding-left: 10px;
+}
+

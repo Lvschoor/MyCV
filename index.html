@@ -1,34 +1,217 @@
 <!doctype html>
-
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Luc Van Schoor - Resume</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, initial-scale=1.0">
     <meta name="description" content="Resume Luc Van Schoor - Java developer">
     <meta name="author" content="Luc Van Schoor">
-
     <meta property="og:title" content="Luc Van Schoor - Resume">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lvschoor.github.io/myCV/">
     <meta property="og:description" content="Resume of Luc Van Schoor - Java developer">
     <meta property="og:image" content="/myCV/images/image.png">
 
-    <link rel="icon" href="images/favicon.ico">    
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-    <script src="js/scripts.js" async></script>
+    <script src="js/javascript.js" async></script>
     <script src="https://kit.fontawesome.com/a2810be296.js" crossorigin="anonymous" defer></script>
-
 </head>
 
 <body>
+    <!-- Header -->
+    <header class="header">
 
-    <i class="fab fa-java fa-3x"></i>
-   
+        <div class="photo-container">
+            <img id="headerimage" src="images/profielfoto.jpg" alt="My picture">
+        </div>
 
+        <div id="headertextbox">
+
+            <h1 id="myname">Luc Van Schoor</h1>
+            <h2 id="myprofession">Java developer <i class="fab fa-java"></i></h2>
+            <cite id="javaquote">
+                It is not enough for code to work.
+            </cite>
+        </div>
+    </header>
+
+    <!-- Side navigation -->
+    <div class="sidenav">
+        <a href="#profile">Profile</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#career">Career</a>
+        <a href="#contact">Contact</a>
+        <a href="#varia">Varia</a>
+        <a href="https://github.com/Lvschoor/Schoolsout.git">Project</a>
+        <a href="images/CV (Eng) Luc Van Schoor.pdf" download><i class="fas fa-download"></i> Resume</a>
+    </div>
+
+    <!-- Page content -->
+    <div class="main" id="main-content">
+
+        <section class=section id="profile">
+            <h3>Profile</h3>
+            <p> I am an enthusastic JAVA developer with robust
+                problem-solving skills,
+                efficient as a teamplayer and focussed on
+                delivering clean code to the client.
+                Creativity and being inquisitive help me to accomplish goals.
+            </p>
+        </section>
+        <section class=section id="skills">
+            <h3>Skills</h3>
+
+            <div id="skillslist">
+
+                <table id="coding-languages">
+                    <tr>
+                        <th>Coding language</th>
+                        <th>Hover over skill to visualize</th>
+                    </tr>
+                    <tr onMouseOver="changeText(this)" onMouseOut="defaultText(this)">
+                        <td>JAVA</td>
+                        <td>Very good</td>
+                    </tr>
+                    <tr onMouseOver="changeText(this)" onMouseOut="defaultText(this)">
+                        <td>SQL/MySQL</td>
+                        <td>Good</td>
+                    </tr>
+                    <tr onMouseOver="changeText(this)" onMouseOut="defaultText(this)">
+                        <td>Javascript</td>
+                        <td>Good</td>
+
+                    </tr>
+                    <tr onMouseOver="changeText(this)" onMouseOut="defaultText(this)">
+                        <td>HTML/CSS</td>
+                        <td>Good</td>
+                    </tr>
+                    <tr onMouseOver="changeText(this)" onMouseOut="defaultText(this)">
+                        <td>Python</td>
+                        <td>Basic</td>
+                    </tr>
+                </table>
+                <table id="frameworks-systems">
+                    <tr>
+                        <th>Frameworks/Systems</th>
+                    </tr>
+                    <tr onMouseOver="changeText(this)" onMouseOut="defaultText(this)">
+                        <td>IntelliJ</td>
+                        <td>Very good</td>
+                    </tr>
+                    <tr onMouseOver="changeText(this)" onMouseOut="defaultText(this)">
+                        <td>Maven</td>
+                        <td>Good</td>
+                    </tr>
+                    <tr onMouseOver="changeText(this)" onMouseOut="defaultText(this)">
+                        <td>Git</td>
+                        <td>Good</td>
+                    </tr>
+                    <tr onMouseOver="changeText(this)" onMouseOut="defaultText(this)">
+                        <td>JPA/Hibernate</td>
+                        <td>Good</td>
+
+                    </tr>
+                    <tr onMouseOver="changeText(this)" onMouseOut="defaultText(this)">
+                        <td>MVC</td>
+                        <td>Basic</td>
+                    </tr>
+                </table>
+                <table id="languages">
+                    <tr>
+                        <th>Languages</th>
+                    </tr>
+                    <tr onMouseOver="changeText(this)" onMouseOut="defaultText(this)">
+                        <td>Dutch</td>
+                        <td>Native</td>
+                    </tr>
+                    <tr onMouseOver="changeText(this)" onMouseOut="defaultText(this)">
+                        <td>English</td>
+                        <td>Very good</td>
+                    </tr>
+                    <tr onMouseOver="changeText(this)" onMouseOut="defaultText(this)">
+                        <td>French</td>
+                        <td>Good</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section class=section id="education">
+            <h3>Education</h3>
+            <p><strong>INTEC Brussel</strong><br>
+                JAVA EE Developer
+            <ul>
+                <li>Started Apr. 2021 till now</li>
+                <li>Option apps and IoT</li>
+            </ul>
+            </p>
+            <p> <strong>EAC-BLS/BAS/SFA/SABENA (Brussels - Arizona USA)</strong><br>
+                Airline pilot training
+            <ul>
+                <li>Started Jan 1990 till May 1991</li>
+            </ul>
+            </p>
+            <p> <strong>KIHO (Kath. Hogeschool Oost-Vlaanderen) (Gent)</strong><br>
+                Master of Science in Electronics and ICT Engineering Technology
+            <ul>
+                <li>Attended from Oct. 1983 to June 1987</li>
+                <li>Thesis: Pascal program generating a visualtemperature distribution on electronic hybrid prints</li>
+            </ul>
+            </p>
+            <p> <strong>Sint-Maarteninstituut (Aalst)</strong><br>
+                Latin-Mathematics
+            <ul>
+                <li>Attended from Sept. 1977 to June 1983</li>
+            </ul>
+            </p>
+        </section>
+        <section class=section id="career">
+            <h3>Career</h3>
+            <p><strong>Airline Pilot</strong>
+            <ul>
+                <li>Bluebird Nordic (2004 - 2021)</li>
+
+                <ul>
+                    <li>Experienced in training (classroom and simulator)</li>
+                    <li>Strong decision making skills as Captain</li>
+                    <li>Demonstrated communication skills as crewmember</li>
+                </ul>
+
+                <li>Air Atlanta/Blue Panorama/Islandsflug (2002-2003)</li>
+                <li>SABENA (1992 till 2001)</li>
+            </ul>
+            </p>
+        </section>
+        <section class=section id="contact">
+            <h3>Contact</h3>
+            <p> <i class="fas fa-phone-volume"></i> +32 (0)2 569 71 33<br>
+                <i class="fas fa-mobile-alt"></i> +32 (0)478 55 2144<br>
+                <i class="far fa-envelope"></i> <a href="mailto: lvschoor@gmail.com">lvschoor@gmail.com</a><br>
+                <i class="fas fa-map-marker-alt"></i> <a href="https://www.google.com/maps/place/Herdebeekstraat+267,+1701+Dilbeek" style="text-decoration: none" target="_self">Herdebeekstraat 267, 1701 Itterbeek - Belgium</a><br>
+                <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/lucvanschoor"
+                    target="_self">www.linkedin.com/in/lucvanschoor</a>
+            </p>
+        </section>
+        <section class=section id="varia">
+            <h3>Varia</h3>
+            <p>
+            <ul>
+                <li>Driver's licence category B</li>
+                <li>Certificate Digital photography 1-2-3 (CVO Meise)</li>
+                <li>Military service - Lüdenscheid (Germany)</li>
+                <ul>
+                    <li>1988 - 1989</li>
+                    <li>Corporal Military Police</li>
+                </ul>
+            </ul>
+            </p>
+        </section>
+    </div>
 </body>
 
 </html>
